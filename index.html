@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .MoreOnAmazon a{
+
+        color: white;
+    }
+    .foot-panel5{
+        color: white;    
+    }
+</style>
+</head>
+
+<body>
+
+
+
+
+    <div id="overlay" onclick="closeNav()"></div>
+
+    <div id="closeBtn" onclick="closeNav()">&times;</div>
+    <div class="sidenav" id="mySidenav">
+        <div class="sidenavHeader">
+            <i class="fas fa-user-circle"></i> Hello, Sign In
+        </div>
+        <!--Below SideNavHeader-->
+        <div id="main-container">
+            <div class="sidenavContentHeader">Digital Content & Devices</div>
+            <a href="#" onclick="openAmazonMusic()">
+                <div class="sidenavRow">
+                    <div>Amazon Music</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Kindle E-readers & Books</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Amazon AppStore</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <hr>
+            <div class="sidenavContentHeader">Shop By Department</div>
+
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Electronics</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Computers</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Smart Home</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Arts & Crafts</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+
+            <!-- Firstdropdown -->
+            <div class="sidenavContainer" id="firstContainer">
+                <hr />
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Automotive</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Baby</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Beauty and Personal Care</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Women's Fashion</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Men's Fashion</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="sidenavRowDropdown" id="firstDropDown" onclick="firstDropDown()">
+                <div>See All</div>
+                <i class="fas fa-chevron-down" style="color: #8e9090; margin-left: 10px">
+                </i>
+            </div>
+            <hr/>
+
+
+            <div class="sidenavContentHeader">Programs & Features</div>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Gift Cards & Top Up</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Find a Gift</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Handmade</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidenavRow">
+                    <div>Amazon Launchpad</div>
+                    <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                </div>
+            </a>
+            <!--Beginning of second sidenavContainer-->
+            <div class="sidenavContainer" id="secondContainer">
+                <hr />
+                <a href="#">
+                    <div class="sidenavContent">Made In Italy</div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Home Services</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavContent">Prime Wardrobe</div>
+                </a>
+                <a href="#">
+                    <div class="sidenavRow">
+                        <div>Amazon Business</div>
+                        <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidenavContent">Amazon Second Chance</div>
+                </a>
+            </div>
+            <div class="sidenavRowDropdown" id="secondDropDown" onclick="secondDropDown()">
+                <div>See All</div>
+                <i class="fas fa-chevron-down" style="color: #8e9090; margin-left: 10px">
+                </i>
+            </div>
+            <hr />
+            <div class="sidenavContentHeader">Help & Settings</div>
+            <a href="#">
+                <div class="sidenavContent">Your Account</div>
+            </a>
+            <a href="#">
+                <div class="sidenavContent">Currency Settings</div>
+            </a>
+            <a href="#">
+                <div class="sidenavContent">Customer Service</div>
+            </a>
+            <a href="#">
+                <div class="sidenavContent">Sign In</div>
+            </a>
+            <div style="height: 50px"></div>
+        </div>
+        <!--End of first container-->
+
+        <div id="sub-container">
+            <div id="mainMenu">
+                <i class="fas fa-chevron-left" style="color: #8e9090"></i> MAIN MENU
+            </div>
+            <hr />
+            <div id="sub-container-content">
+                <!-- <div class="sidenavContentHeader">Prime Video</div>
+          <a href="#"><div class="sidenavContent">All Videos</div></a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <i class="fa-solid fa-xmark"></i> -->
+    <div class="triangle"></div>
+    <div class="hdn-sign">
+        <div class="sign-btnn">
+            <div>Signin</div>
+            <span>  New customer?<a style="color:blue" ="#">Start here</a></span>
+        </div>
+        <hr>
+        <div class="hdn-table">
+           
+           <div>
+
+            <h3>
+                Your Lists
+            </h3>
+            <ul type="none">
+                <li>Create a List</li>
+                <li>Find a List or Registry</li>
+            </ul>
+           </div>
+           <div class="hdn-line"></div>
+           <div>
+            <h3>
+                Your Account
+            </h3>
+            <ul type="none">
+                <li>Account</li>
+                <li>Orders</li>
+                <li>Recommendations
+                </li>
+                <li>Browsing History
+                </li>
+                <li>Watchlist
+                </li>
+                <li>Video Purchases & Rentals</li>
+                <li>Kindle Unlimited</li>
+                <li>Content & Devices</li>
+                <li>Subscribe & Save Items</li>
+                <li>Memberships & Subscriptions</li>
+                <li>Music Library</li>
+            </ul>
+           </div>
+        </div>
+    </div>
+
+
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <a href="index.html">
+                    <div class="logo">
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select" name="" id="">
+                    <option value="">All</option>
+                    <option value="">Arts & Crafts</option>
+                    <option value="">Automotive</option>
+                    <option value="">Mens's fashion</option>
+                    <option value="">Luggage</option>
+                    <option value="">Beatu & Personal Care</option>
+                    <option value="">Baby</option>
+                    <option value="">Books</option>
+                    <option value="">Computers</option>
+                    <option value="">Electronics</option>
+                </select>
+
+                <input class="search-input" type="text" placeholder="Search Amazon" name="" id="">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="country border">
+                <div class="country-flag">
+                </div>
+                <select name="" class="lang-select drop" id="">
+                    <option value="">EN</option>
+                    <option value="">EN</option>
+                    <option value="">EN</option>
+                    <option value="">EN</option>
+                    <option value="">EN</option>
+                </select>
+            </div>
+
+            <div class="signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+        <div class="panel">
+
+            <div class="panel-all border" onclick="openNav()" style="
+              font-size: 20px;
+              cursor: pointer;
+            ">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+
+            <div class="panel-deals border">
+                Shop deals in Electronics
+            </div>
+
+        </div>
+    </header>
+
+    <div class="hero-section">
+
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a href="https://www.amazon.in/">Click here to go to amazon.in</a> </p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Clothes</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box1_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box2_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box3_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box4_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box5_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Pet care</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box6_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>New arrival in toys</h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box7_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Discover fashion trends
+                </h2>
+                <div class="box-img" style="background-image: url('Amazon Clone (Resources)/box8_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Bact to top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+            <div class="change-language">English</div>
+            <div class="lang-and-currency">$ USD- U.S Dollar</div>
+            <div class="choose-country">United States</div>
+        </div>
+
+
+        <div class="foot-panel4">
+
+
+            <table class="MoreOnAmazon">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="">Amazon Music <br>
+                                <span>Stream millions of songs</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Amazon Advertising
+                                <br> <span>Find, attract, and engage customers</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">6pm
+                                <br> <span>Score deals on fashion brands</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">AbeBooks
+                                <br> <span>Books, art & collectibles</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">ACX
+                                <br> <span>Audiobook Publishing Made Easy</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Sell on Amazon
+                                <br><span>Start a Selling Account</span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Amazon Business
+                                <br> <span>Everything For Your Business</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Amp
+                                <br> <span>Host your own live radio show with music you love</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">AmazonGlobal
+                                <br> <span>Ship Orders Internationally</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Home Services
+                                <br> <span>Experienced Pros Happiness Guarantee</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Amazon Web Services
+                                <br> <span>Scalable Cloud Computing Services</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Audible
+                                <br> <span>Listen to Books & Original Audio Performances</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">Box Office Mojo
+                                <br><span>Find Movie Box Office Data</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">ComiXology
+                                <br> <span>Thousands of Digital Comics</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">DPReview
+                                <br> <span>Digital Photography</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Fabric
+                                <br> <span>Sewing, Quilting & Knitting</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Goodreads
+                                <br> <span>Book reviews & recommendations</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">IMDb
+                                <br> <span>Movies, TV & Celebrities</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">IMDbPro
+                                <br><span>Get Info Entertainment Professionals Need</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Kindle Direct Publishing
+                                <br> <span>Indie Digital & Print Publishing Made Easy</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Prime Video Direct
+                                <br> <span>Video Distribution Made Easy</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Shopbop
+                                <br> <span>Designer Fashion Brands</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Woot!
+                                <br> <span>Deals and Shenanigans</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Zappos
+                                <br> <span>Shoes & Clothing</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Ring
+                                <br> <span>Smart Home Security Systems</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">eero WiFi
+                                <br><span>Stream 4K Video in Every Room</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Blink
+                                <br> <span>Smart Security for Every Home</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Neighbors App
+                                <br> <span>Real-Time Crime & Safety Alerts</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">Amazon Subscription Boxes
+                                <br> <span>Top subscription boxes – right to your door</span>
+                            </a>
+                        </td>
+                        <td class="tbspacer"></td>
+                        <td>
+                            <a href="#">PillPack
+                                <span>Pharmacy Simplified</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="foot-panel5">
+            <div class="pages">
+                <a href="">Conditions of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Yours Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
